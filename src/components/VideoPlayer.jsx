@@ -6,7 +6,7 @@ var VideoPlayer = (props) => (
     </div>
     <div className="video-player-details">
     
-      {<h3>Video Title</h3>}
+      <h3>Video Title</h3>
       <div>Video Description</div>
     </div>
   </div>
