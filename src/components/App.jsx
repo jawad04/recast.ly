@@ -2,6 +2,8 @@ import VideoList from './VideoList.js';
 import VideoPlayer from './VideoPlayer.js';
 import Search from './Search.js';
 import VideoListEntry from './VideoListEntry.js';
+import exampleVideoData from '../data/exampleVideoData.js';
+
 
 var App = () => (
   <div>
@@ -12,10 +14,10 @@ var App = () => (
     </nav>
     <div className="row">
       <div className="col-md-7">
-        <VideoPlayer />
+        <VideoPlayer video={exampleVideoData[0]}/>
       </div>
       <div className="col-md-5">
-        <VideoList />
+        <VideoList videos={exampleVideoData}/>
       </div>
     </div>
   </div>
